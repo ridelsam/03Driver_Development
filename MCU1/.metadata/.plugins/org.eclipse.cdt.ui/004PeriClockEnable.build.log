@@ -1,0 +1,20 @@
+19:20:47 **** Incremental Build of configuration Debug for project 004PeriClockEnable ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "004PeriClockEnable.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\rsamonte\Embedded_Systems\Driver Development\MCU1\004PeriClockEnable\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="004PeriClockEnable.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 004PeriClockEnable.elf
+ 
+arm-none-eabi-size   004PeriClockEnable.elf 
+arm-none-eabi-objdump -h -S  004PeriClockEnable.elf  > "004PeriClockEnable.list"
+arm-none-eabi-objcopy  -O binary  004PeriClockEnable.elf  "004PeriClockEnable.bin"
+   text	   data	    bss	    dec	    hex	filename
+    716	      8	   1568	   2292	    8f4	004PeriClockEnable.elf
+Finished building: default.size.stdout
+ 
+Finished building: 004PeriClockEnable.list
+Finished building: 004PeriClockEnable.bin
+ 
+ 
+
+19:20:48 Build Finished. 0 errors, 0 warnings. (took 638ms)
+

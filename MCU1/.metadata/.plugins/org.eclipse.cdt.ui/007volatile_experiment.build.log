@@ -1,0 +1,10 @@
+15:50:21 **** Incremental Build of configuration Debug for project 007volatile_experiment ****
+make -j12 all 
+arm-none-eabi-size   007volatile_experiment.elf 
+   text	   data	    bss	    dec	    hex	filename
+    700	      8	   1568	   2276	    8e4	007volatile_experiment.elf
+Finished building: default.size.stdout
+ 
+
+15:50:21 Build Finished. 0 errors, 0 warnings. (took 240ms)
+

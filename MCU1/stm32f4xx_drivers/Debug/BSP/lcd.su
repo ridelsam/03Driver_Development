@@ -1,0 +1,11 @@
+lcd.c:18:6:lcd_send_command	16	static
+lcd.c:37:6:lcd_print_char	16	static
+lcd.c:51:6:lcd_print_string	16	static
+lcd.c:63:6:lcd_init	24	static
+lcd.c:141:13:write_4_bits	16	static
+lcd.c:152:6:lcd_display_clear	8	static
+lcd.c:167:6:lcd_display_return_home	8	static
+lcd.c:184:6:lcd_set_cursor	16	static
+lcd.c:204:13:lcd_enable	8	static
+lcd.c:213:13:mdelay	24	static
+lcd.c:218:13:udelay	24	static
